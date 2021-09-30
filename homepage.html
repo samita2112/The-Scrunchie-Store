@@ -1,0 +1,288 @@
+<!doctype html>
+
+<html lang="en">
+  <title>The Scrunchie Store</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;   }
+    body
+    {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    background-image: url(scrr.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;}
+    .outer{
+    width: 1370px;
+    height: 1320px;
+    position: relative;
+    margin: 7% auto;
+    color: rgb(255,255,255); 
+    overflow: hidden;
+    background-color: #0d0d0e;
+    opacity: 90%;
+    box-shadow: 0 0 20px 9px #312f2fd0;
+    padding-bottom:50px;}
+    nav {
+        background-color: #0d0d0e;
+        height:90px;
+        background-attachment: fixed;
+        font-weight: bolder;
+        font-size: large;
+
+    }
+
+    footer {
+        background-color: #0d0d0e;
+        height:120px;
+        background-attachment: fixed;
+        font-weight: bolder;
+        font-size: large;
+        text-align: center;
+        color:white;
+    }
+
+    .navbar img{
+    height:60px;
+    width:60px;
+    position: absolute;
+    }
+    
+  </style>
+  <body>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <img src="scrunchie.png">
+      <a style="font-size:25px;padding-left:5%;font-style:italic;background:linear-gradient(to right,#9269d4,#423481,rgba(67, 135, 175, 0.938),rgb(43, 156, 86),rgba(209, 209, 100, 0.692),rgb(230, 174, 70),rgb(214, 69, 69)); 
+      -webkit-background-clip: text;-webkit-text-fill-color: transparent;" class="navbar-brand" href="#">The Scrunchie Store</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">All Scrunchies</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <div style="background-color:#0d0d0e;opacity:95%;color:aliceblue;" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a style="color:#9269d4;" class="dropdown-item" href="#">Satin</a>
+                <a style="color:#9269d4;" class="dropdown-item" href="#">Velvet</a>
+                <a style="color:#9269d4;"  class="dropdown-item" href="#">Organza</a>
+                <a style="color:#9269d4;" class="dropdown-item" href="#">Floral</a>
+              
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Trending Scrunchies</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="">Offers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Contact Us</a>
+          </li>
+         
+         
+          
+        </ul>
+        <form class="form-inline my-2 my-lg-0"  >
+          <input name="query" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button style="border-color:#9269d4; color:#9269d4;" class="btn btn-outline"  type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    
+    <div class="outer">
+    <!-- ################################ CARDS ##################################################### -->
+    <h3 style="padding-left: 4%; padding-top: 2%; font-family: 'Verdana';">Categories</h3>
+
+    <div class="row" style="padding-top: 2%; padding-left: 4%;">
+
+
+    <div style="padding-left: 2%;">
+    <div class="card" style="width: 18rem;height:19rem;border-radius:15px;">
+      <img src="satin.jpg" class="card-img-top"style="border-radius:15px;height:190px;width:286px;" alt="...">
+      <div class="card-body">
+        <h4 style="color:black;" class="card-title">Satin</h4>
+        <p class="card-text"></p>
+        <a href="" style="border-color:#9269d4; background-color:#9269d4;" class="btn btn-primary">Explore</a>
+      </div>
+    </div>
+  </div>
+  <div style="padding-left: 2%;">
+    <div class="card" style="width: 18rem;height:19rem;border-radius:15px;">
+      <img src="velvet.jpeg" class="card-img-top"style="border-radius:15px;height:190px;width:286px;" alt="...">
+      <div class="card-body">
+        <h4 style="color:black;" class="card-title">Velvet</h4>
+        <p class="card-text"></p>
+        <a href="" style="border-color:#9269d4; background-color:#9269d4;" class="btn btn-primary">Explore</a>
+      </div>
+    </div>
+  </div>
+  <div style="padding-left: 2%;">
+    <div class="card" style="width: 18rem;height:19rem;border-radius:15px">
+      <img src="organza.jpeg" class="card-img-top"style="border-radius:15px;height:190px;width:286px" alt="...">
+      <div class="card-body">
+        <h4 style="color:black;" class="card-title">Organza</h4>
+        <p class="card-text"></p>
+        <a href="" style="border-color:#9269d4; background-color:#9269d4;" class="btn btn-primary">Explore</a>
+      </div>
+    </div>
+  </div>
+    <div style="padding-left: 2%;">
+    <div class="card" style="width: 18rem;height:19rem;border-radius:15px">
+      <img src="floral.jpg" class="card-img-top" style="border-radius:15px;height:190px;width:286px;" alt="...">
+      <div class="card-body">
+        <h4 style="color:black;" class="card-title">Floral</h4>
+        <a href="" style="border-color:#9269d4; background-color:#9269d4;" class="btn btn-primary">Explore</a>
+      </div>        
+    </div>
+  </div>
+  </div>
+  <hr>
+
+    <h3 style="padding-left: 4%; padding-top: 2%; font-family: 'Verdana';">Trending </h3>
+
+    <div class="row" style="padding-top: 2%; padding-left: 4%;">
+    
+        <div style="padding-left: 2%;">
+            <div class="card" style="width: 18rem;height:19rem;border-radius:15px">
+              <img src="bow.jpeg" class="card-img-top"style="border-radius:15px;height:190px;width:286px;" alt="...">
+              <div class="card-body">
+                <h4 style="color:black;" class="card-title">Bow</h4>
+                <p class="card-text"></p>
+                <a href="" style="border-color:#9269d4; background-color:#9269d4;" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding-left: 2%;">
+            <div class="card" style="width: 18rem;height:19rem;border-radius:15px">
+              <img src="rainbow.jpeg" class="card-img-top"style="border-radius:15px;height:190px;width:286px;" alt="...">
+              <div class="card-body">
+                <h4 style="color:black;" class="card-title">Rainbow</h4>
+                <p class="card-text"></p>
+                <a href="" style="border-color:#9269d4; background-color:#9269d4;" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding-left: 2%;">
+            <div class="card" style="width: 18rem;height:19rem;border-radius:15px">
+              <img src="crochet.jpeg" class="card-img-top"style="border-radius:15px;height:190px;width:286px;" alt="...">
+              <div class="card-body">
+                <h4 style="color:black;" class="card-title">Crochet</h4>
+                <p class="card-text"></p>
+                <a href="" style="border-color:#9269d4; background-color:#9269d4;" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding-left: 2%;">
+            <div class="card" style="width: 18rem;height:19rem;border-radius:15px">
+              <img src="glitter.jpeg" class="card-img-top"style="border-radius:15px;height:190px;width:286px;" alt="...">
+              <div class="card-body">
+                <h4 style="color:black;" class="card-title">Shimmer</h4>
+                <p class="card-text"></p>
+                <a href="" style="border-color:#9269d4; background-color:#9269d4;" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+  
+  </div>
+  <hr>
+
+  
+
+  <h3 style="padding-left: 4%; padding-top: 2%; font-family: 'Verdana';">Offers</h3>
+
+    <div class="row" style="padding-top: 2%; padding-left: 4%;">
+    
+    
+   
+        <div style="padding-left: 2%;">
+            <div class="card" style="width: 18rem;height:19rem;border-radius:15px">
+              <img src="sale-1.jpg" class="card-img-top"style="border-radius:15px;height:190px;width:286px;" alt="...">
+              <div class="card-body">
+                <h4 style="color:black;" class="card-title">Buy 3 get 1 free</h4>
+                <p class="card-text"></p>
+                <a href="" style="border-color:#9269d4; background-color:#9269d4;" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding-left: 2%;">
+            <div class="card" style="width: 18rem;height:19rem;border-radius:15px">
+              <img src="sale-2.jpeg" class="card-img-top"style="border-radius:15px;height:190px;width:286px;" alt="...">
+              <div class="card-body">
+                <h4 style="color:black;" class="card-title">40% off on organza</h4>
+                <p class="card-text"></p>
+                <a href="" style="border-color:#9269d4; background-color:#9269d4;" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding-left: 2%;">
+            <div class="card" style="width: 18rem;height:19rem;border-radius:15px">
+              <img src="sale-3.jpeg" class="card-img-top"style="border-radius:15px;height:190px;width:286px;" alt="...">
+              <div class="card-body">
+                <h4 style="color:black;" class="card-title">20 random (20rs each)</h4>
+                <p class="card-text"></p>
+                <a href="" style="border-color:#9269d4; background-color:#9269d4;" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding-left: 2%;">
+            <div class="card" style="width: 18rem;height:19rem;border-radius:15px">
+              <img src="sale-4.jpeg" class="card-img-top"style="border-radius:15px;height:190px;width:286px;" alt="...">
+              <div class="card-body">
+                <h4 style="color:black;" class="card-title">buy 2 get 1 at 50%</h4>
+                <p class="card-text"></p>
+                <a href="" style="border-color:#9269d4; background-color:#9269d4;" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+
+  </div>
+</div>
+<footer>
+    <div>
+        <p> For any queries contact | 9876543210</p>
+        <p>
+          &copy; 2021 by Samita. 
+        </p>
+        <p>
+            All rights reserved.
+        </p>
+      </div>
+      
+</footer>
+   
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

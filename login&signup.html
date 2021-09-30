@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Scrunchie Store</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  crossorigin="anonymous">       
+    </head>
+    <body>
+        <div class="mona">
+            <div class="heading">
+                <img src="scrunchie.png">
+                <h1 >The Scrunchie Store</h1>
+            </div>
+            <div class="formbox">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+            </div>
+            <form name="loginform" id="login" class="input-group" onsubmit="return validatelogin()" method="post">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" class="input-field" placeholder="Username" name="Username1">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" class="input-field"  placeholder="Password" name="Password1">
+                <button href="" type="submit" class="submit-btn">Log In</button> 
+            </form>
+            <form name="signupform" id="signup" class="input-group" onsubmit="return validatesignup()" method="post">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" class="input-field" placeholder="Username" name="Username" >
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <input type="email" class="input-field" placeholder="Email Id" name="Email">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" class="input-field"  placeholder="Password" name="Password" >
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <input placeholder = "DOB" class = "input-field" type = "text" onfocus = "(this.type = 'date')" id = "date" name="dob" >
+                <button type="submit" class="submit-btn">Sign Up</button> 
+                <input type="checkbox" name="check" class="check-box"><span>I agree to all terms & conditions</span>
+            </form>
+        </div>
+    </div>
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("signup");
+            var z = document.getElementById("btn"); 
+            function signup(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            } 
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            } 
+            function validatesignup() {
+                var name = document.forms["signupform"]["Username"];
+                var email = document.forms["signupform"]["Email"];  
+                var password = document.forms["signupform"]["Password"];
+                var birthday = document.forms["signupform"]["dob"];
+                var checkbox = document.forms["signupform"]["check"];
+                var date = new Date(birthday.value);
+                var paswd=  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
+          
+                if (name.value == "") {
+                    window.alert("Please enter your name.");
+                    name.focus();
+                    return false;
+                }
+                if (checkbox.checked == false) {
+                    window.alert("Please select the check box.");
+                    checkbox.focus();
+                    return false;
+                }
+                if(date.getFullYear() > 2014) {
+                    window.alert("Age Eligibility >8 years");
+                    birthday.focus();
+                    return false;
+                  }
+          
+                if (email.value == "") {
+                    window.alert(
+                      "Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+                }
+          
+                if (birthday.value == "") {
+                    window.alert(
+                      "Please enter your dob.");
+                    phone.focus();
+                    return false;
+                }
+                if (name.length >10 || name.length <3 ) {
+                    window.alert("Please enter Username having length range 3-10 characters");
+                    name.focus();
+                    return false;
+                }
+                if (! password.value.match(paswd)) {
+                    window.alert("Input Password must contain 7 to 15 characters which has at least one numeric digit and a special character");
+                    password.focus();
+                    return false;
+                }              
+                return true;
+            }
+            function validatelogin() {
+                var name = document.forms["loginform"]["Username1"];
+                var password = document.forms["loginform"]["Password1"];
+
+                if (name.value == "") {
+                    window.alert("Please enter Username.");
+                    name.focus();
+                    return false;
+                } 
+                if (password.value == "") {
+                    window.alert("Please enter Password.");
+                    name.focus();
+                    return false;
+                }  
+                return true;
+            }
+            
+        </script>
+    </body>
+</html>
